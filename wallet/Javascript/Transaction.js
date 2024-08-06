@@ -203,7 +203,7 @@ setInterval(()=>{
                 
 
                 
-                localStorage.removeItem('AddressOrCode')
+                
                 
 
                 localStorage.setItem('receiveCount',Number(localStorage.getItem('receiveCount'))+1)
@@ -214,10 +214,12 @@ setInterval(()=>{
 
                 document.querySelector('.transaction_SD_button').style.display='block';
                 document.querySelector('.transaction_SD_HI').innerText='Transfer successful!';
+                document.querySelector('.transaction_SD_RecipientRight').innerText=`${localStorage.getItem('AddressOrCode')}`;
 
                 document.querySelector('.transaction_SD_cancel').style.display='none';
                 document.querySelector('.transaction_SD_confirm').style.display='none';
                 document.querySelector('.transaction_SD_done').style.display='block';
+                localStorage.removeItem('AddressOrCode')
             })
             
             
