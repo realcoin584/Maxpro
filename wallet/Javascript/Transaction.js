@@ -219,9 +219,9 @@ setInterval(()=>{
                 document.querySelector('.transaction_SD_cancel').style.display='none';
                 document.querySelector('.transaction_SD_confirm').style.display='none';
                 document.querySelector('.transaction_SD_done').style.display='block';
-                setTimeout(()=>{
-                    localStorage.removeItem('AddressOrCode')
-                },20000)
+
+                
+                localStorage.removeItem('AddressOrCode')
             })
             
             
