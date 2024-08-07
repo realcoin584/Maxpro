@@ -2378,7 +2378,7 @@ setInterval(()=>{
 
         let receiveSend_Html='';
         for(let i=0;i<localStorage.getItem('receiveCount'); i++){
-            if(localStorage.getItem(`receive${i}`).split('?')[2] === '-'){
+            if(localStorage.getItem(`receive${localStorage.getItem('receiveCount')-i}`).split('?')[2] === '-'){
                 receiveSend_Html+=`
                 <div class="receiveSend_containerDiv">
                     <div class="receiveSend_containerDiv_left sent_Icon"></div>
@@ -2386,11 +2386,11 @@ setInterval(()=>{
                     <div class="receiveSend_containerDiv_right">
                         <div class="sendReceive_priceDiv">
                             <p class="sendReceive_priceDiv_left">Sent</p>
-                            <p class="sendReceive_priceDiv_right colorRed">- ${localStorage.getItem(`receive${i}`).split('?')[0]}</p>
+                            <p class="sendReceive_priceDiv_right colorRed">- ${localStorage.getItem(`receive${localStorage.getItem('receiveCount')-i}`).split('?')[0]}</p>
                         </div>
                         <div class="userAndIdDiv">
                             <p class="userAndId_left">To</p>
-                            <p class="userAndId_right">${localStorage.getItem(`receive${i}`).split('?')[1]}</p>
+                            <p class="userAndId_right">${localStorage.getItem(`receive${localStorage.getItem('receiveCount')-i}`).split('?')[1]}</p>
                         </div>
                     </div>
                 </div>
@@ -2402,11 +2402,11 @@ setInterval(()=>{
                     <div class="receiveSend_containerDiv_right">
                         <div class="sendReceive_priceDiv">
                             <p class="sendReceive_priceDiv_left">Receive</p>
-                            <p class="sendReceive_priceDiv_right colorGreen">+ ${localStorage.getItem(`receive${i}`).split('?')[0]}</p>
+                            <p class="sendReceive_priceDiv_right colorGreen">+ ${localStorage.getItem(`receive${localStorage.getItem('receiveCount')-i}`).split('?')[0]}</p>
                         </div>
                         <div class="userAndIdDiv">
                             <p class="userAndId_left">From</p>
-                            <p class="userAndId_right">${localStorage.getItem(`receive${i}`).split('?')[1]}</p>
+                            <p class="userAndId_right">${localStorage.getItem(`receive${localStorage.getItem('receiveCount')-i}`).split('?')[1]}</p>
                         </div>
                     </div>
                 </div>
