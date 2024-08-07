@@ -16,6 +16,21 @@ setTimeout(()=>{
 
 
 
+if(localStorage.getItem('displayCoins')===null){
+    localStorage.setItem('displayCoins',0)
+    localStorage.setItem('coinsCount',0)
+}
+
+
+
+
+
+
+
+
+
+
+
 //mainWalletContainer_div
 let mainWalletContainer_div=document.querySelector('.mainWalletContainer_div');
 //mainWalletContainer
