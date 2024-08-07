@@ -1897,7 +1897,7 @@ transaction_SD_confirm.addEventListener('click',()=>{
 setInterval(()=>{
     
 
-    if(Inputcode.value != localStorage.getItem('AmountTransaction')){
+    if(Inputcode.value != localStorage.getItem('AmountTransaction') && localStorage.getItem('AddressOrCode') != null){
 
         document.querySelector('.transaction_SD_AmountRight').innerHTML=`${localStorage.getItem('AmountTransaction')}`;
 
