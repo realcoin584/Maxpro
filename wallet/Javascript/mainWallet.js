@@ -1515,6 +1515,10 @@ let receivePaymentContainer_AddressCodeDiv=document.querySelector('.receivePayme
 
 
 if(localStorage.getItem('Myaddress')!= null){
+
+    receivePaymentContainer_AddressCodeDiv.innerHTML=`UQ${localStorage.getItem('Myaddress')}.max`;
+    document.querySelector('.userID').innerHTML=`UQ${localStorage.getItem('Myaddress').slice(0,2)}...max`;
+    
     receivePaymentContainer_AddressCodeDiv.innerHTML=`
     <div class="receivePaymentContainer_codeDiv">
         <span class="codeI">${localStorage.getItem('Mycode').slice(0,1)}</span>
@@ -1527,8 +1531,7 @@ if(localStorage.getItem('Myaddress')!= null){
         <span class="codeVII">${localStorage.getItem('Mycode').slice(7,8)}</span>
     </div> `;
 
-    receivePaymentContainer_AddressCodeDiv.innerHTML=`UQ${localStorage.getItem('Myaddress')}.max`;
-    document.querySelector('.userID').innerHTML=`UQ${localStorage.getItem('Myaddress').slice(0,2)}...max`;
+    
 }
 
 
