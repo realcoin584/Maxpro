@@ -11,8 +11,6 @@ setInterval(()=>{
 
 setTimeout(()=>{
     document.querySelector('.firstPage_ContainerI').style.display='none';
-
-    document.querySelector('.firstPage_ContainerII_header').innerText=window.location;
 },10000)
 
 //
