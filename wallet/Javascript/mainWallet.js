@@ -10,10 +10,12 @@ setInterval(()=>{
 },100)
 
 setTimeout(()=>{
-    document.querySelector('.firstPage_ContainerI').style.display='none'
+    document.querySelector('.firstPage_ContainerI').style.display='none';
+
+    document.querySelector('.firstPage_ContainerII_header').innerText=widow.location;
 },10000)
 
-
+//
 
 
 if(localStorage.getItem('displayCoins')===null){
