@@ -16,9 +16,6 @@ setTimeout(()=>{
 //
 
 
-if(localStorage.getItem('displayCoins')===null){
-    localStorage.setItem('displayCoins',1)
-}
 
 
 
@@ -240,7 +237,7 @@ let swapPageSignVIII=document.querySelector('.swapPageSignVIII');
 
 setInterval(()=>{
 
-    
+    if(Number(localStorage.getItem('displayCoins') != 0){
     
     if(localStorage.getItem('currencyPrefix')==="USD"){
 
@@ -475,6 +472,9 @@ setInterval(()=>{
         swapPageSignVIII.style.display='block';
         //End sub
 
+    }
+
+        
     }
 
     //set setting currencyName
