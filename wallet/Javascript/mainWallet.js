@@ -18,7 +18,6 @@ setTimeout(()=>{
 
 if(localStorage.getItem('displayCoins')===null){
     localStorage.setItem('displayCoins',1)
-    localStorage.setItem('coinsCount',1)
 }
 
 
