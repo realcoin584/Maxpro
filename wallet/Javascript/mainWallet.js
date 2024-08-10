@@ -237,7 +237,7 @@ let swapPageSignVIII=document.querySelector('.swapPageSignVIII');
 
 setInterval(()=>{
 
-    if(Number(localStorage.getItem('displayCoins')) != 0){
+    if(`${localStorage.getItem('displayCoins')}` != '0'){
     
     if(localStorage.getItem('currencyPrefix')==="USD"){
 
