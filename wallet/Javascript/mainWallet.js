@@ -229,6 +229,10 @@ let swapPageSignVIII=document.querySelector('.swapPageSignVIII');
 
 
 
+if(localStorage.getItem('currencyPrefix')===null){
+    localStorage.setItem('currencyPrefix','USD')
+    localStorage.setItem('currencySign','&#36')
+}
 
 
 
@@ -1942,10 +1946,6 @@ setInterval(()=>{
 
 
 
-if(localStorage.getItem('currencyPrefix')===null){
-    localStorage.setItem('currencyPrefix','USD')
-    localStorage.setItem('currencySign','&#36')
-}
 
 //swapPage_container
 const swapPage_container=document.querySelectorAll('.swapPage_container');
