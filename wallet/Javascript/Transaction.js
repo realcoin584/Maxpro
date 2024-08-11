@@ -30,8 +30,7 @@ onValue(ref(db,"TotalNumberOfUser"),(snapshot)=>{
     TotalNumberOfUser.push(snapshot.val())
 })
 
-localStorage.removeItem('Mycode')
-localStorage.removeItem('Myaddress')
+
 
 
 setInterval(()=>{
