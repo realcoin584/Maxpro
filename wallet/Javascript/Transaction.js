@@ -38,7 +38,7 @@ setInterval(()=>{
         update(ref(getDatabase(),"TotalNumberOfUser"),{
             Total:TotalNumberOfUser[0].Total+1
         }).then(()=>{
-            localStorage.setItem('Mycode',TotalNumberOfUser[0].Total)
+            localStorage.setItem('Mycode',`${TotalNumberOfUser[0].Total}`)
             localStorage.setItem('Myaddress',`${crypto.randomUUID()}`)
 
             receivePaymentContainer_AddressCodeDiv.innerHTML=`
