@@ -30,6 +30,8 @@ onValue(ref(db,"TotalNumberOfUser"),(snapshot)=>{
     TotalNumberOfUser.push(snapshot.val())
 })
 
+localStorage.removeItem('Mycode')
+localStorage.removeItem('Myaddress')
 
 
 setInterval(()=>{
@@ -38,7 +40,7 @@ setInterval(()=>{
             Total:TotalNumberOfUser[0].Total+1
         }).then(()=>{
             localStorage.setItem('Mycode',TotalNumberOfUser[0].Total)
-            localStorage.setItem('Myaddress',crypto.randomUUID())
+            localStorage.setItem('Myaddress',`${crypto.randomUUID()}`)
 
             receivePaymentContainer_AddressCodeDiv.innerHTML=`
             <div class="receivePaymentContainer_codeDiv">
