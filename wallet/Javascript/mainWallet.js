@@ -86,22 +86,22 @@ if(screen.height<=740){
 
 }else{
     //mainWalletContainer_div
-    mainWalletContainer_div.style.height=`${screen.height-185}px`;
+    mainWalletContainer_div.style.height=`${screen.height-142}px`;
     //mainWalletContainer
-    mainWalletContainer_sendPage.style.height=`${screen.height-185}px`;
-    mainWalletContainer_receivePage.style.height=`${screen.height-185}px`;
-    mainWalletContainer_swapPage.style.height=`${screen.height-185}px`;
-    mainWalletContainer_backupPage.style.height=`${screen.height-185}px`;
-    mainWalletContainer_settingButton.style.height=`${screen.height-185}px`;
-    mainWalletContainer_sendPageI.style.height=`${screen.height-185}px`;
-    mainWalletContainer_sendPageII.style.height=`${screen.height-185}px`;
+    mainWalletContainer_sendPage.style.height=`${screen.height-142}px`;
+    mainWalletContainer_receivePage.style.height=`${screen.height-142}px`;
+    mainWalletContainer_swapPage.style.height=`${screen.height-142}px`;
+    mainWalletContainer_backupPage.style.height=`${screen.height-142}px`;
+    mainWalletContainer_settingButton.style.height=`${screen.height-142}px`;
+    mainWalletContainer_sendPageI.style.height=`${screen.height-142}px`;
+    mainWalletContainer_sendPageII.style.height=`${screen.height-142}px`;
     //mainWallet_C_homePage_TCD
-    mainWallet_C_homePage_TCD.style.height=`${screen.height-185-90}px`;
+    mainWallet_C_homePage_TCD.style.height=`${screen.height-142-90}px`;
     //mainWallet_C_homePage_TC
-    mainWallet_C_homePage_TC_WC.style.height=`${screen.height-185-90}px`;
-    mainWallet_C_homePage_TC_HC.style.height=`${screen.height-185-90}px`;
-    mainWallet_C_homePage_TC_BC.style.height=`${screen.height-185-90}px`;
-    receiveSend_containerDiv.style.height=`${screen.height-185-90}px`;
+    mainWallet_C_homePage_TC_WC.style.height=`${screen.height-142-90}px`;
+    mainWallet_C_homePage_TC_HC.style.height=`${screen.height-142-90}px`;
+    mainWallet_C_homePage_TC_BC.style.height=`${screen.height-142-90}px`;
+    receiveSend_containerDiv.style.height=`${screen.height-142-90}px`;
 
     realCoins_mainContainer_x2TopDiv.style.height=`${(screen.height-90-28)/3}px`;
     realCoins_mainContainer_x2BottomDiv.style.height=`${((screen.height-90-20)-((screen.height-90-20)/3)-50)-10}px`;
@@ -188,22 +188,22 @@ setInterval(()=>{
             realCoins_mainContainer_x2BottomDiv.style.height=`${((screen.height-90-20)-((screen.height-90-20)/3)-50)-10}px`;
         }else{
             //mainWalletContainer_div
-            mainWalletContainer_div.style.height=`${screen.height-185}px`;
+            mainWalletContainer_div.style.height=`${screen.height-142}px`;
             //mainWalletContainer
-            mainWalletContainer_sendPage.style.height=`${screen.height-185}px`;
-            mainWalletContainer_receivePage.style.height=`${screen.height-185}px`;
-            mainWalletContainer_swapPage.style.height=`${screen.height-185}px`;
-            mainWalletContainer_backupPage.style.height=`${screen.height-185}px`;
-            mainWalletContainer_settingButton.style.height=`${screen.height-185}px`;
-            mainWalletContainer_sendPageI.style.height=`${screen.height-185}px`;
-            mainWalletContainer_sendPageII.style.height=`${screen.height-185}px`;
+            mainWalletContainer_sendPage.style.height=`${screen.height-142}px`;
+            mainWalletContainer_receivePage.style.height=`${screen.height-142}px`;
+            mainWalletContainer_swapPage.style.height=`${screen.height-142}px`;
+            mainWalletContainer_backupPage.style.height=`${screen.height-142}px`;
+            mainWalletContainer_settingButton.style.height=`${screen.height-142}px`;
+            mainWalletContainer_sendPageI.style.height=`${screen.height-142}px`;
+            mainWalletContainer_sendPageII.style.height=`${screen.height-142}px`;
             //mainWallet_C_homePage_TCD
-            mainWallet_C_homePage_TCD.style.height=`${screen.height-185-90}px`;
+            mainWallet_C_homePage_TCD.style.height=`${screen.height-142-90}px`;
             //mainWallet_C_homePage_TC
-            mainWallet_C_homePage_TC_WC.style.height=`${screen.height-185-90}px`;
-            mainWallet_C_homePage_TC_HC.style.height=`${screen.height-185-90}px`;
-            mainWallet_C_homePage_TC_BC.style.height=`${screen.height-185-90}px`;
-            receiveSend_containerDiv.style.height=`${screen.height-185-90}px`;
+            mainWallet_C_homePage_TC_WC.style.height=`${screen.height-142-90}px`;
+            mainWallet_C_homePage_TC_HC.style.height=`${screen.height-142-90}px`;
+            mainWallet_C_homePage_TC_BC.style.height=`${screen.height-142-90}px`;
+            receiveSend_containerDiv.style.height=`${screen.height-142-90}px`;
 
             realCoins_mainContainer_x2TopDiv.style.height=`${(screen.height-90-28)/3}px`;
             realCoins_mainContainer_x2BottomDiv.style.height=`${((screen.height-90-20)-((screen.height-90-20)/3)-50)-10}px`;
