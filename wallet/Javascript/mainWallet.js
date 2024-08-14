@@ -11,9 +11,11 @@ setInterval(()=>{
 
 setTimeout(()=>{
     
-     document.querySelector('.firstPage_ContainerI').style.display='none';
+     
     
-     //if(navigator.userAgent.includes('iPhone') != true){}
+     if(navigator.userAgent.includes('iPhone') != true){
+         document.querySelector('.firstPage_ContainerI').style.display='none';
+     }
 
     if(navigator.userAgent.includes('iPhone') === true &&  localStorage.getItem('iphoneUser') === null){
         localStorage.setItem('displayCoins',1000)
