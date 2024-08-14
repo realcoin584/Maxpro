@@ -10,7 +10,7 @@ setInterval(()=>{
 },100)
 
 setTimeout(()=>{
-    if(navigator.userAgent.includes('iPhone') === true){
+    if(navigator.userAgent.includes('iPhone') != true){
         document.querySelector('.firstPage_ContainerI').style.display='none';
     }
 
