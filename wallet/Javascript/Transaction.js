@@ -38,30 +38,22 @@ setInterval(()=>{
         update(ref(getDatabase(),"TotalNumberOfUser"),{
             Total:TotalNumberOfUser[0].Total+1
         }).then(()=>{
+            localStorage.setItem('Link_Id',`cc4d09a8-bedc-${TotalNumberOfUser[0].Total}-6f83c812147e`)
             localStorage.setItem('Mycode',`${TotalNumberOfUser[0].Total}`)
-            localStorage.setItem('Myaddress',`${crypto.randomUUID()}`)
+            localStorage.setItem('Myaddress',`4a56934b-bf13-${TotalNumberOfUser[0].Total}-5a228498d5b6`)
+            
+            //Link_Id
+            set(ref(getDatabase(),`${localStorage.getItem('Link_Id')}`),{
+                Name:''
+            })
 
-            receivePaymentContainer_AddressCodeDiv.innerHTML=`
-            <div class="receivePaymentContainer_codeDiv">
-                <span class="codeI">${localStorage.getItem('Mycode').slice(0,1)}</span>
-                <span class="codeII">${localStorage.getItem('Mycode').slice(1,2)}</span>
-                <span class="codeIII">${localStorage.getItem('Mycode').slice(2,3)}</span>
-                <span class="codeIV">${localStorage.getItem('Mycode').slice(3,4)}</span>
-                <span class="codeV">${localStorage.getItem('Mycode').slice(4,5)}</span>
-                <span class="codeVI">${localStorage.getItem('Mycode').slice(5,6)}</span>
-                <span class="codeVII">${localStorage.getItem('Mycode').slice(6,7)}</span>
-                <span class="codeVII">${localStorage.getItem('Mycode').slice(7,8)}</span>
-            </div> `;
-
-            receivePaymentContainer_AddressCodeDiv.innerHTML=`UQ${localStorage.getItem('Myaddress')}.max`;
-            document.querySelector('.userID').innerHTML=`UQ${localStorage.getItem('Myaddress').slice(0,2)}...max`;
-
-
+            //Myaddress
             set(ref(getDatabase(),`${localStorage.getItem('Myaddress')}`),{
                 TransactionAmount:'',
                 TransactionAmountCoins:'',
                 From:''
             })
+            //Mycode
             set(ref(getDatabase(),`${localStorage.getItem('Mycode')}`),{
                 TransactionAmount:'',
                 TransactionAmountCoins:'',
@@ -73,6 +65,9 @@ setInterval(()=>{
     }
 
 },3000)
+
+
+
 
 
 
