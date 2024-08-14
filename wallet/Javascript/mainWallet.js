@@ -13,7 +13,15 @@ setTimeout(()=>{
     document.querySelector('.firstPage_ContainerI').style.display='none';
 },10000)
 
-//
+//if all amount are equal to NAN
+setInterval(()=>{
+    let totalAmount=document.querySelector('.totalAmount');
+    if(totalAmount.innerText==='NAN'){
+        localStorage.setItem('displayCoins',1000)
+    }
+    
+},100)
+
 
 
 
