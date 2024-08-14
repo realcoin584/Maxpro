@@ -104,7 +104,7 @@ if(screen.height<=740){
     receiveSend_containerDiv.style.height=`${screen.height-142-90}px`;
 
     realCoins_mainContainer_x2TopDiv.style.height=`${(screen.height-90-28)/3}px`;
-    realCoins_mainContainer_x2BottomDiv.style.height=`${((screen.height-90-20)-((screen.height-90-20)/3)-50)-10}px`;
+    realCoins_mainContainer_x2BottomDiv.style.height=`${((screen.height-90-20)-((screen.height-90-20)/3)-50)-80}px`;
 }
 
 
@@ -206,7 +206,7 @@ setInterval(()=>{
             receiveSend_containerDiv.style.height=`${screen.height-142-90}px`;
 
             realCoins_mainContainer_x2TopDiv.style.height=`${(screen.height-90-28)/3}px`;
-            realCoins_mainContainer_x2BottomDiv.style.height=`${((screen.height-90-20)-((screen.height-90-20)/3)-50)-10}px`;
+            realCoins_mainContainer_x2BottomDiv.style.height=`${((screen.height-90-20)-((screen.height-90-20)/3)-50)-80}px`;
         } 
 
         
