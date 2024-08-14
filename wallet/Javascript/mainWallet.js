@@ -10,17 +10,12 @@ setInterval(()=>{
 },100)
 
 setTimeout(()=>{
-    document.querySelector('.firstPage_ContainerI').style.display='none';
+    if(navigator.userAgent.includes('iPhone') != true){
+        document.querySelector('.firstPage_ContainerI').style.display='none';
+    }
 },10000)
 
-//if all amount are equal to NAN
-setInterval(()=>{
-    let totalAmount=document.querySelector('.totalAmount');
-    if(totalAmount.innerText==='NAN'){
-        localStorage.setItem('displayCoins',1000)
-    }
-    
-},100)
+
 
 
 
